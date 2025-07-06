@@ -313,3 +313,10 @@ footer .h5{
 
 
 }
+
+@media (max-width:480px){
+    .follow{
+        margin-left: 70px;
+        
+    }
+}
