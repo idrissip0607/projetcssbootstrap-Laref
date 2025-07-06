@@ -1,0 +1,310 @@
+*{
+    padding: 0;
+    margin: 0;
+    
+}
+body{
+    background-color:var(--pagebackground);
+}
+
+.border-vert{
+    border: #37a831 solid;
+    
+}
+
+:root{
+    --paragraphcolor:#f9f9f9;
+    --pagebackground:#fff9ef;
+    --secondbgcolor:#fffef8;
+    --footerbgcolor:#12151b;
+}
+
+nav{
+    background-color: var(--pagebackground);
+}
+.nav-link:hover{
+    color: #37a831;
+    transition: .8s ease;
+}
+.bleu-nuit{
+    color: #10043e;
+}
+
+.hero{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)),url(https://i.pinimg.com/736x/b6/22/cb/b622cb8f811ddd1b60d5b778944bf7fc.jpg)no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+}
+
+.hero h1{
+    font-size: 4rem;
+    
+}
+
+.hero p{
+    font-size: 1.3rem;
+    margin-top: 50px;
+}
+
+
+
+#produit{
+    padding: 30px 0;
+
+}
+
+.card:hover{
+    transform: translateY(-10px);
+    transition: .8s ease;
+}
+
+.card img{
+    height: 20rem;
+    overflow: hidden;
+}
+
+.card a:hover{
+    color: #37a831;
+}
+
+
+#about{
+    height: 100vh;
+    background-color: var(--secondbgcolor);
+}
+
+#about .container{
+    display: flex;
+    padding: 30px 0;
+    justify-content: space-between;
+}
+
+#about .container img{
+    width: 500px;
+    border-radius: 8px;
+    height: 80vh;
+
+}
+.about-text{
+    width: 550px;
+}
+
+.about-text p{
+    text-align: start;
+}
+
+.contact-content{
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-info{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 500px;
+}
+.info{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    background-color: #fff;
+    width: 100%;
+    border-radius: 8px;
+    height: 20vh;
+    
+}
+.info:hover{
+    transform: translateY(-10px);
+    transition: .8s ease;
+}
+
+.icon-info{
+    background-color: var(--pagebackground);
+    font-size: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-info:hover{
+    background-color: var(--footerbgcolor);
+    color: var(--pagebackground);
+    transition: .8s ease;
+}
+
+.text-inform a:hover{
+    color: #37a831;
+    transition: .8s ease;
+}
+
+.contact-form{
+    width:500px;
+    background-color: #fff;
+    padding: 20px;
+    
+}
+
+.contact-form:hover{
+    transform: translateY(-10px);
+    transition: .8s ease;
+}
+.form-info{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+footer{
+    background-color: var(--footerbgcolor);
+    
+}
+
+.social-media{
+    background-color: #ffff;
+    color: #261564;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-media:hover{
+    background-color: #37a831;
+    transition: .8s ease;
+    color: #212121;
+    transform: translateY(-5px);
+    transition: .8s ease;
+}
+
+
+
+@media (min-width:901px) and (max-width:1200px){
+    #about{
+        height: 100%;
+        font-size: .8rem;
+    }
+    #about .container img{
+        width: 350px;
+        height: 50vh;
+        margin-top: 70px;
+    }
+
+    .about-text{
+        padding: 20px;
+        margin-left: 90px;
+    }
+
+    .contact-content{
+        gap: 40px;
+    }
+
+
+}
+
+
+@media (min-width:769px) and (max-width:900px){
+    #about{
+        height: 100%;
+        font-size: .8rem;
+    }
+    #about .container img{
+        width: 300px;
+        height: 45vh;
+        margin-top: 100px;
+    }
+
+    .about-text{
+        padding: 20px;
+    }
+
+    .contact-content{
+        gap: 40px;
+    }
+
+
+}
+
+@media (max-width:768px){
+    .hero .d-flex{
+        gap: 1rem;
+    }
+
+
+    #about .container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: auto;
+    padding-top: 0;
+    
+    
+    
+}
+
+#about{
+    height: 100%;
+}
+#about .container img{
+    width: 100%;
+    border-radius: 8px;
+    height: 60vh;
+
+}
+
+.about-text{
+    width: 100%;
+    height: auto;
+    padding: 10px;
+}
+
+#about{
+    margin: 0 10px;
+}
+
+.contact-content{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form{
+    width: 100%;
+}
+.contact-info{
+    width: 100%;
+}
+
+footer .h5{
+    font-size: 1rem;
+    padding-bottom: 15px;
+}  
+}
+
+
+@media (min-width:450px) and (max-width:766px){
+    .card-media{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        
+    }
+
+    .card-media img{
+        height: 15rem;
+    }
+
+    .card-media a{
+        text-align: justify;
+    }
+
+
+}
