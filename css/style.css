@@ -33,7 +33,7 @@ nav{
 .hero{
     width: 100%;
     height: 100vh;
-    background: linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)),url(https://i.pinimg.com/736x/b6/22/cb/b622cb8f811ddd1b60d5b778944bf7fc.jpg)no-repeat;
+    background: linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)),url('../img/hero.jpg')no-repeat;
     background-position: center;
     background-size: cover;
     
@@ -288,6 +288,11 @@ footer .h5{
     font-size: 1rem;
     padding-bottom: 15px;
 }  
+
+.follow{
+    margin-left: 150px;
+}
+
 }
 
 
